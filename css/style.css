@@ -101,11 +101,13 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    gap: 15px;
+    margin-left: 20px;
 }
 
 .container .toggle span {
     color: var(--lightGrayishBlue);
+    margin-left: 44px;
+    margin-right: 23px;
 }
 
 .container .toggle .check {
@@ -113,13 +115,14 @@ a {
     display: none;
 }
 
-.container .toggle .scheck{
+.container .toggle .scheck {
     width: 55px;
-    height: 30px;
+    height: 33px;
     background-color: #c4c7f2;
     border-radius: 30px;
     position: relative;
     cursor: pointer;
+    margin-right: -18px;
 }
 
 .container .toggle .ball {
@@ -128,6 +131,92 @@ a {
     height: 25px;
     border-radius: 50%;
     background-color: var(--whiteColor);
-    top: 2px;
-    left: 2px;
+    top: 4px;
+    left: 5px;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.container .content .box {
+    text-align: center;
+    width: 350px;
+    background-color: var(--whiteColor);
+    padding: 40px;
+}
+
+.container .content .box:nth-child(1) {
+    border-radius: 6px 0 0 6px;
+}
+
+.container .content .box:nth-child(2) {
+    background: linear-gradient(135deg, rgba(163, 168, 240, 1) 50%, rgba(105, 111, 221, 1) 100%);
+    color: var(--whiteColor);
+    border-radius: 6px;
+    transform: translateY(-5px);
+    height: 590px;
+}
+
+.container .content .box:nth-child(3) {
+    border-radius: 0 6px 6px 0;
+}
+
+.container .content .box h3 {
+    color: var(--grayishBlue);
+}
+
+.container .content .box:nth-of-type(2) h3 {
+    color: var(--whiteColor);
+}
+
+.container .content .box .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container .content .box .price span {
+    font-size: 2rem;
+}
+
+.container .content .box .price h2 {
+    font-size: 3rem;
+}
+
+.container .content .box ul {}
+
+.container .content .box:nth-of-type(2) li {
+    color: var(--whiteColor);
+}
+
+.container .content .box ul li {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: var(--lightGrayishBlue);
+}
+
+.container .content .box ul li:last-of-type {
+    border-bottom: 1px solid #ddd;
+}
+
+.container .content .box a {
+    display: block;
+    color: var(--whiteColor);
+    background: linear-gradient(135deg, rgba(163, 168, 240, 1) 50%, rgba(105, 111, 221, 1) 100%);
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    margin: 30px auto;
+}
+
+.container .content .box:nth-of-type(2) a {
+    background: var(--whiteColor) !important;
+    color: var(--darkGrayishBlue);
 }

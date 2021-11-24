@@ -18,6 +18,8 @@ html {
 }
 
 :root {
+    --firstColor: hsl(236, 72%, 79%);
+    --secondColor: hsl(237, 63%, 64%);
     --veryLightGrayishBlue: hsl(240, 78%, 98%);
     --lightGrayishBlue: hsl(234, 14%, 74%);
     --grayishBlue: hsl(233, 13%, 49%);
@@ -32,6 +34,11 @@ body {
     font-size: 15px;
     font-weight: 700;
     line-height: 1.6;
+    background-color: var(--veryLightGrayishBlue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
@@ -78,4 +85,9 @@ a {
     .container {
         width: 1278px;
     }
+}
+
+.container h1 {
+    text-align: center;
+    color: var(--grayishBlue);
 }

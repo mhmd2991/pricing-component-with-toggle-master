@@ -90,4 +90,44 @@ a {
 .container h1 {
     text-align: center;
     color: var(--grayishBlue);
+    padding-top: 4.2rem;
+    margin-left: 40px;
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+}
+
+.container .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.container .toggle span {
+    color: var(--lightGrayishBlue);
+}
+
+.container .toggle .check {
+    margin-top: 30px;
+    display: none;
+}
+
+.container .toggle .scheck{
+    width: 55px;
+    height: 30px;
+    background-color: #c4c7f2;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .toggle .ball {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--whiteColor);
+    top: 2px;
+    left: 2px;
 }

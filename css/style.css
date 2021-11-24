@@ -1,1 +1,81 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    transition: all .3s ease-in-out;
+    /*border: 1px solid red;*/
+}
 
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --veryLightGrayishBlue: hsl(240, 78%, 98%);
+    --lightGrayishBlue: hsl(234, 14%, 74%);
+    --grayishBlue: hsl(233, 13%, 49%);
+    --darkGrayishBlue: hsl(232, 13%, 33%);
+    --blackColor: #000;
+    --whiteColor: hsl(0, 0%, 100%);
+    --mainTransition: .3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {}
+
+a {
+    display: block;
+    transition: var(--mainTransition);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1400px) {
+    .container {
+        width: 1278px;
+    }
+}

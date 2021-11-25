@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 h1,
@@ -86,6 +87,25 @@ a {
     .container {
         width: 1278px;
     }
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body::before {
+    background: url(../images/bg-top.svg) no-repeat;
+    background-position: 100% 0%;
+}
+
+body::after {
+    background: url(../images/bg-bottom.svg) no-repeat;
+    background-position: 0% 100%;
 }
 
 .container h1 {
@@ -253,7 +273,7 @@ a {
         row-gap: 20px;
         margin-left: 0;
     }
-    
+
     .container .content .box:nth-child(2) {
         transform: translateY(0px);
         height: 100%;

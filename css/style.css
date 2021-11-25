@@ -140,6 +140,10 @@ a {
     right: 5px;
 }
 
+.container .toggle .check:checked + .ball {
+    left: 5px;
+}
+
 .container .content {
     display: flex;
     align-items: center;

@@ -83,7 +83,7 @@ a {
 }
 
 /* Large */
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
     .container {
         width: 1278px;
     }
@@ -170,7 +170,6 @@ body::after {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 70px;
-    margin-left: 31px;
 }
 
 .container .content .box {
@@ -278,9 +277,7 @@ body::after {
         transform: translateY(0px);
         height: 100%;
     }
-}
 
-@media(max-width: 375px) {
     .container .content .box {
         width: 325px;
     }
